@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>代码考古</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="探究源码">
+<meta property="og:type" content="website">
+<meta property="og:title" content="代码考古">
+<meta property="og:url" content="http://ccshell.com/index.html">
+<meta property="og:site_name" content="代码考古">
+<meta property="og:description" content="探究源码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="代码考古">
+<meta name="twitter:description" content="探究源码">
+  
+    <link rel="alternative" href="/atom.xml" title="代码考古" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">ccsheller</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">探究源码</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/CMakeLists/" style="font-size: 10px;">CMakeLists</a> <a href="/tags/Libreoffice/" style="font-size: 10px;">Libreoffice</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/QT/" style="font-size: 15px;">QT</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/gdb/" style="font-size: 20px;">gdb</a> <a href="/tags/hg/" style="font-size: 10px;">hg</a> <a href="/tags/libcxx/" style="font-size: 10px;">libcxx</a> <a href="/tags/observer/" style="font-size: 10px;">observer</a> <a href="/tags/openoffice/" style="font-size: 10px;">openoffice</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/shell/" style="font-size: 15px;">shell</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">ccsheller</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="null" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">ccsheller</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">探究源码</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-Building-LibreOffice-on-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/03/Building-LibreOffice-on-Linux/" class="article-date">
+  	<time datetime="2015-08-03T01:44:44.000Z" itemprop="datePublished">2015-08-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/03/Building-LibreOffice-on-Linux/">Linux下编译Libreoffice</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>项目比较大，编译时间比较长。建议代码放在至少有30G剩余空间的磁盘位置。</p>
+<h1 id="更新系统（重要）">更新系统（重要）</h1><p>先更新系统，以防装了编译环境后系统出现问题。<br>在Debian/Ubuntu中：</p>
+<pre><code>sudo apt-<span class="built_in">get</span> update
+sudo apt-<span class="built_in">get</span> <span class="built_in">dist</span>-upgrade
+</code></pre><p>在Fedora中：</p>
+<pre><code><span class="title">su</span> -c <span class="string">'yum update'</span>
+</code></pre><h1 id="编译环境">编译环境</h1><p>最简单的方式使用系统提供的编译支持进行环境配置。<br>在Debian/Ubuntu中：</p>
+<pre><code>$ sudo apt-<span class="preprocessor">get</span> <span class="keyword">build-dep </span>libreoffice
+</code></pre><p>在Fedora中：</p>
+<pre><code><span class="variable">$ </span>su -c <span class="string">'yum-builddep libreoffice'</span>
+</code></pre><h1 id="配置和编译">配置和编译</h1><p>简单编译可以使用：</p>
+<pre><code><span class="variable">$ </span><span class="comment">#进入项目根目录</span>
+
+<span class="variable">$ </span>./autogen.sh <span class="comment">#检查编译环境，生成编译配置文件</span>
+
+<span class="variable">$ </span>make <span class="comment">#编译</span>
+</code></pre><p>推荐使用如下命令进行配置：</p>
+<pre><code><span class="comment">$</span> <span class="string">.</span><span class="comment">/autogen</span><span class="string">.</span><span class="comment">sh</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">disable</span><span class="literal">-</span><span class="comment">tdeab</span> <span class="comment">\</span>
+<span class="literal">-</span><span class="literal">-</span><span class="comment">disable</span><span class="literal">-</span><span class="comment">kdeab</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">disable</span><span class="literal">-</span><span class="comment">postgresql</span><span class="literal">-</span><span class="comment">sdbc</span> <span class="comment">\</span>
+<span class="literal">-</span><span class="literal">-</span><span class="comment">disable</span><span class="literal">-</span><span class="comment">firebird</span><span class="literal">-</span><span class="comment">sdbc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">with</span><span class="literal">-</span><span class="comment">lang=zh</span><span class="literal">-</span><span class="comment">CN</span> <span class="comment">\</span>
+<span class="literal">-</span><span class="literal">-</span><span class="comment">enable</span><span class="literal">-</span><span class="comment">gstreamer</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">disable</span><span class="literal">-</span><span class="comment">gstreamer</span><span class="literal">-</span><span class="comment">0</span><span class="literal">-</span><span class="comment">10</span> 
+</code></pre><p>可以将如上代码放入脚本文件中。<br>可以使用：</p>
+<pre><code>$ ./autogen.<span class="keyword">sh</span> --<span class="keyword">help</span>
+</code></pre><p>查看支持哪些选项。<br>编译完成后可以直接在项目根目录下启动程序：</p>
+<pre><code>$ instdir/<span class="function"><span class="keyword">program</span></span>/soffice --writer
+</code></pre><h1 id="加速编译">加速编译</h1><p>用<strong>ccache缓存</strong>编译器生成的结果，这可以节省重新编译项目时的时间。<br>使用系统库中的包就可以装好ccache。<br>在Debian/Ubuntu中：</p>
+<pre><code><span class="variable">$ </span>apt-cache search ccache <span class="comment">#查找相应的包</span>
+
+<span class="variable">$ </span>sudo apt-get install ccache <span class="comment">#安装相应的包</span>
+</code></pre><p>在Fedora中：</p>
+<pre><code><span class="variable">$ </span>su -c <span class="string">'yum search ccache'</span> <span class="comment">#查找相应的包</span>
+
+<span class="variable">$ </span>su -c <span class="string">'yum install ccache'</span> <span class="comment">#安装相应的包</span>
+</code></pre><p>装好后默认就可以使用了。可做如下配置<br>修改ccach缓存路径(在用户的.bashrc中添加):</p>
+<pre><code><span class="variable">$export</span> <span class="constant">CCACHE_DIR</span>=<span class="regexp">/data/ccache</span>_data <span class="comment">#</span>
+</code></pre><p>如果磁盘空间紧张可以启用ccache的压缩缓存：</p>
+<pre><code>$ <span class="keyword">export</span> CCACHE_COMPRESS=<span class="number">1</span>
+</code></pre><p>修改ccache使用32G的缓存空间:</p>
+<pre><code>$ ccache --<span class="built_in">max</span>-size <span class="number">32</span>G <span class="preprocessor">#</span>
+</code></pre><p>用<strong>Icecream做分布式编译</strong>，需要有多台机器可以访问，且需要一台机器做服务器（做调度）。Libreoffice对Icecream做了内建支持，使用系统库中的包就可以装好icecream。只需要在配置时./autogen.sh后再附加上：</p>
+<pre><code><span class="comment">--enable-icecream</span>
+</code></pre><p>配置时默认会查找<strong>/opt/icecream/</strong>下的编译器，系统包安装其到了/usr/sbin/，为此需要建立一个符号链接</p>
+<pre><code><span class="variable">$ </span>sudo ln -s /usr/sbin/ <span class="regexp">/opt/icecream</span>
+</code></pre><p>服务器的机器需要<strong>手动启用调度程序</strong>，也可以将下行放入自启动脚本中：</p>
+<pre><code>$ icecc-scheduler <span class="operator">-d</span>
+</code></pre><p>客户端程序默认就启动了守护程序，如果没有启动可以直接执行：</p>
+<pre><code>$ iceccd <span class="operator">-d</span>
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Libreoffice/">Libreoffice</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-QT-The-Application-Icon" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/24/QT-The-Application-Icon/" class="article-date">
+  	<time datetime="2015-07-24T06:23:04.000Z" itemprop="datePublished">2015-07-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/24/QT-The-Application-Icon/">在QT中应用程序的图标问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在windows平台，参考QT的文档设置后，程序的图标不能显示。</p>
+<blockquote>
+<p>The application icon, typically displayed in the top-left corner of an application’s top-level windows, is set by calling the QWindow::setWindowIcon() method.</p>
+<p>In order to change the icon of the executable application file itself, as it is presented on the desktop (i.e., prior to application execution), it is necessary to employ another, platform-dependent technique.</p>
+<p>Setting the Application Icon on Windows</p>
+<p>First, create an ICO format bitmap file that contains the icon image. This can be done with e.g. Microsoft Visual C++: Select File|New, then select the File tab in the dialog that appears, and choose Icon. (Note that you do not need to load your application into Visual C++; here we are only using the icon editor.)</p>
+<p>Store the ICO file in your application’s source code directory, for example, with the name myappico.ico.</p>
+<p>Then, assuming you are using qmake to generate your makefiles, you only need to add a single line to your .pro project file:</p>
+<p>RC_ICONS = myappico.ico</p>
+<p>Finally, regenerate your makefile and your application. The .exe file will now be represented by your icon in Explorer.</p>
+<p>However, if you already have an .rc file, for example, with the name myapp.rc, which you want to reuse, the following two steps will be required. First, put a single line of text to the myapp.rc file:</p>
+<p>IDI_ICON1               ICON    DISCARDABLE     “myappico.ico”</p>
+<p>Then, add this line to your myapp.pro file:</p>
+<p>RC_FILE = myapp.rc</p>
+<p>If you do not use qmake, the necessary steps are: first, create an .rc file and run the rc or windres program on the .rc file, then link your application with the resulting .res file.</p>
+</blockquote>
+<p>多次网络查询和阅读文档没有发现不对的地方，无奈只好找QT自带的例子进行比对。发现我们的项目在resource.h文件中有：</p>
+<pre><code><span class="hexcolor">#def</span>ine IDI_ICON1                       <span class="number">101</span>
+</code></pre><p>QT的例子中可没定义对应的资源宏。于是注释掉这行后编译运行，图标可以显示出来了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/QT/">QT</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-declare-int-main-function-in-c" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/20/declare-int-main-function-in-c/" class="article-date">
+  	<time datetime="2015-07-20T01:22:01.000Z" itemprop="datePublished">2015-07-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/20/declare-int-main-function-in-c/">c++ int main 写法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天看c++ primer 第四版，看到“main 函数的返回值必须是int型”。对此很有怀疑，不是可以用void main？于是查询网络找到了这样一篇文章。<br>”void main()“?</p>
+<p>根据这篇文章，查询了C++之 父 Bjarne Stroustrup的主页faq</p>
+<p><a href="http://www.stroustrup.com/bs_faq2.html#void-main" target="_blank" rel="external">http://www.stroustrup.com/bs_faq2.html#void-main</a></p>
+<p><a href="http://www.stroustrup.com/bstechfaq.htm" target="_blank" rel="external">http://www.stroustrup.com/bstechfaq.htm</a>  （中文版本，我可以写”void main()”吗）</p>
+<p>因此c99（c89可以接受main( ))只支持两种：</p>
+<pre><code><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">void</span> )</span></span>{ <span class="keyword">return</span> <span class="number">0</span>; }
+</code></pre><p>和</p>
+<pre><code><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[] )</span></span>{ <span class="keyword">return</span> <span class="number">0</span>; }
+</code></pre><p>c++98（以及c++0x）标准也只支持两种：</p>
+<pre><code><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(  )</span></span>{ <span class="keyword">return</span> <span class="number">0</span>; }
+</code></pre><p>和</p>
+<pre><code><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[] )</span></span>{ <span class="keyword">return</span> <span class="number">0</span>; }
+</code></pre><p>其中c99和c++98规定main函数中没有return 语句，编译器需要提供一个return 0</p>
+<p>其他形式的main，都是各自编译器自己扩展或为了向后兼容保留了以前的实现。为了代码有良好的风格和可移植，还是按标准书写代码。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c++</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-output-modified-file-for-hg" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/16/output-modified-file-for-hg/" class="article-date">
+  	<time datetime="2015-07-16T01:31:27.000Z" itemprop="datePublished">2015-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/16/output-modified-file-for-hg/">HG输出给定用户指定分支下的修改文件</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码审查需要输出工作分支下，自己所做的修改。<br>部门使用hg做的版本控制，今天写了个shell脚本。<br>脚本默认输出当前分支，当前hg配置的用户所做的修改</p>
+<p>代码<a href="https://github.com/ccsheller/Snippets/tree/master/shell" target="_blank" rel="external">hgmodified.sh</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hg/">hg</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Use-shell-creates-directories-A-to-Z" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/13/Use-shell-creates-directories-A-to-Z/" class="article-date">
+  	<time datetime="2015-07-13T01:10:13.000Z" itemprop="datePublished">2015-07-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/13/Use-shell-creates-directories-A-to-Z/">一行shell实现在当前目录创建A到Z的目录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code><span class="keyword">for</span> var <span class="keyword">in</span> `seq <span class="number">65</span> <span class="number">90</span>`; <span class="keyword">do</span> var=$(<span class="built_in">echo</span> <span class="string">"ibase=10; obase=8; <span class="variable">${var}</span>"</span>|bc);<span class="built_in">printf</span> <span class="string">"\\<span class="variable">${var}</span>"</span>|xargs mkdir; <span class="keyword">done</span>
+</code></pre><p>命令讲解</p>
+<pre><code>seq <span class="number">65</span> <span class="number">90</span> 生成<span class="number">65</span>到<span class="number">90</span>的序列。<span class="number">65</span>对应A的ascii的A
+
+echo <span class="string">"ibase=10; obase=8; ${var}"</span>|bc 将十进制值转换成八进制
+
+$(...) 一种命令替换方法
+
+<span class="built_in">printf</span> <span class="string">"\\${var}"</span> 将八进制的值转换成字符
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Print-Chinese-for-OpenOffice-in-gdb" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/09/Print-Chinese-for-OpenOffice-in-gdb/" class="article-date">
+  	<time datetime="2015-07-09T02:02:08.000Z" itemprop="datePublished">2015-07-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/09/Print-Chinese-for-OpenOffice-in-gdb/">GDB输出中文之利用Python扩展输出OpenOffice内部字符串</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>从blog中迁移过来</strong></p>
+<p>一直想利用gdb的python扩展输出中文字符串。这两天下定决心终于实现了一个简易版本。参照了网上不少的文章，关于gdb扩展python的。关于python使用的。</p>
+<p>代码<a href="https://github.com/ccsheller/Snippets/tree/master/gdb" target="_blank" rel="external">pzh.py</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/openoffice/">openoffice</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-save-breakpoint-in-gdb" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/08/save-breakpoint-in-gdb/" class="article-date">
+  	<time datetime="2015-07-08T00:45:49.000Z" itemprop="datePublished">2015-07-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/08/save-breakpoint-in-gdb/">GDB保存断点</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>利用python可以实现gdb的断点保存功能</p>
+<p>代码<a href="https://github.com/ccsheller/Snippets/tree/master/gdb" target="_blank" rel="external">savebreakpoint.py</a></p>
+<p>现在此功能gdb已经内置了，直接使用</p>
+<pre><code>save breakpoints <span class="string">[filename]</span>
+</code></pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-GDB-Commands-in-Python" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/07/GDB-Commands-in-Python/" class="article-date">
+  	<time datetime="2015-07-07T01:03:03.000Z" itemprop="datePublished">2015-07-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/07/GDB-Commands-in-Python/">GDB调试之Python扩展</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考：</p>
+<p><a href="http://sourceware.org/gdb/onlinedocs/gdb/Python-Commands.html#Python-Commands" target="_blank" rel="external">Python Commands</a></p>
+<p><a href="http://www.cinsk.org/wiki/Debugging_with_GDB:_How_to_create_GDB_Commands_in_Python" target="_blank" rel="external">Debugging with GDB:How to create GDB Commands in Python</a></p>
+<p><a href="http://sourceware.org/gdb/onlinedocs/gdb/Commands-In-Python.html#Commands-In-Python" target="_blank" rel="external">Commands In Python</a></p>
+<p>gdb从7.0以后提供了python扩展，其大大加强了gdb的可编程能力。现在各个发行版安装的gdb都启用了python扩展。</p>
+<h2 id="如何使用python呢？">如何使用python呢？</h2><h3 id="验证">验证</h3><p>验证机器中安装的gdb是否启用了python：</p>
+<pre><code>启动gdb
+(gdb) python print <span class="number">2</span>+<span class="number">2</span>
+<span class="number">4</span>
+(gdb)
+</code></pre><p>如果得到了如上的输出，说明已经支持了python。</p>
+<h3 id="自己安装支持python的gdb">自己安装支持python的gdb</h3><p>下载gdb源码—&gt;configure时附加上–with-python</p>
+<h3 id="python的使用">python的使用</h3><pre><code>(gdb) python print <span class="number">2</span>+<span class="number">2</span>
+<span class="number">4</span>
+(gdb) print <span class="number">4</span>
+$<span class="number">1</span> = <span class="number">4</span>
+(gdb) source  /root/hello.<span class="function">py
+<span class="title">Hello</span>
+<span class="params">(gdb)</span></span>
+</code></pre><p>主要有上面三种使用方式。其中source为了方便，可以将相关语句放到~/.gdbinit中</p>
+<p>要发挥python的威力，就要用脚本。</p>
+<p>引用：</p>
+<pre><code><span class="class"><span class="keyword">class</span> <span class="title">Hello</span><span class="params">(gdb.Command)</span>:</span>
+<span class="string">"""Typical hello world: hello NAME
+
+    Print "hello NAME" where NAME is the argument.  This command is for
+    demonstrating of creating new command in Python."""</span>
+
+<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>
+    gdb.Command.__init__(self, <span class="string">"hello"</span>, gdb.COMMAND_OBSCURE)
+
+<span class="function"><span class="keyword">def</span> <span class="title">invoke</span><span class="params">(self, arg, from_tty)</span>:</span>
+    <span class="keyword">print</span> <span class="string">"hello, %s!"</span> % arg
+
+Hello()
+</code></pre><p>self为python对象本身</p>
+<p>也可以写成</p>
+<pre><code><span class="function"><span class="title">super</span><span class="params">(Hello, self)</span></span>.__init__ (<span class="string">"hello"</span>, gdb.COMMAND_OBSCURE)
+</code></pre><p>命令解释</p>
+<p>Command.<strong>init</strong> (name, command_class [, completer_class [, prefix]])</p>
+<p>name为命令名</p>
+<p>command_class为命令分类</p>
+<p>使用效果</p>
+<pre><code>(gdb) <span class="operator"><span class="keyword">help</span> obscure
+Obscure features.
+
+<span class="keyword">List</span> <span class="keyword">of</span> commands:
+...
+hello <span class="comment">-- Typical hello world: hello NAME</span>
+...
+
+<span class="keyword">Type</span> <span class="string">"help"</span> followed <span class="keyword">by</span> command <span class="keyword">name</span> <span class="keyword">for</span> <span class="keyword">full</span> documentation.
+<span class="keyword">Type</span> <span class="string">"apropos word"</span> <span class="keyword">to</span> <span class="keyword">search</span> <span class="keyword">for</span> commands related <span class="keyword">to</span> <span class="string">"word"</span>.
+Command <span class="keyword">name</span> abbreviations <span class="keyword">are</span> allowed <span class="keyword">if</span> unambiguous.
+(gdb) <span class="keyword">help</span> hello
+Typical hello world: hello <span class="keyword">NAME</span>
+
+Print <span class="string">"hello NAME"</span> <span class="keyword">where</span> <span class="keyword">NAME</span> <span class="keyword">is</span> the argument.  This command <span class="keyword">is</span> <span class="keyword">for</span>
+demonstrating <span class="keyword">of</span> creating <span class="keyword">new</span> command <span class="keyword">in</span> Python.
+(gdb) hello ccshell
+hello, ccshell!
+(gdb)</span>
+</code></pre><p>有用功能的开发，有机会再写。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gdb/">gdb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Observer-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/23/Observer-Pattern/" class="article-date">
+  	<time datetime="2015-06-23T05:15:12.000Z" itemprop="datePublished">2015-06-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/23/Observer-Pattern/">监听者模式代码实现</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>代码<a href="https://github.com/ccsheller/Snippets/tree/master/observer" target="_blank" rel="external">Observer</a></p>
+<p>欢迎提出建议。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/QT/">QT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/observer/">observer</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-read-libcxx-s-CMakeLists-txt" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/16/read-libcxx-s-CMakeLists-txt/" class="article-date">
+  	<time datetime="2015-06-16T08:12:10.000Z" itemprop="datePublished">2015-06-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/16/read-libcxx-s-CMakeLists-txt/">阅读libcxx中的CMakeLists.txt</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文读取的CMakeLists.txt在<a href="https://github.com/llvm-mirror/libcxx/commits/master/CMakeLists.txt" target="_blank" rel="external">这里</a>，其版本6f0811110212dd0e0c8caafb781406876fdb5add</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">project</span>(libcxx CXX C)</span><br></pre></td></tr></table></figure>
+<p>cmake_minimum_required(VERSION 2.8)</p>
+<p>if(POLICY CMP0042)<br>  cmake_policy(SET CMP0042 NEW) # Set MACOSX_RPATH=YES by default<br>endif()</p>
+<p>set(PACKAGE_NAME libcxx)<br>set(PACKAGE_VERSION trunk-svn)<br>set(PACKAGE_STRING “${PACKAGE_NAME} ${PACKAGE_VERSION}”)<br>set(PACKAGE_BUGREPORT “llvmbugs@cs.uiuc.edu”)</p>
+<h1 id="Add_path_for_custom_modules">Add path for custom modules</h1><p>set(CMAKE_MODULE_PATH<br>  “${CMAKE_CURRENT_SOURCE_DIR}/cmake”<br>  “${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules”<br>  ${CMAKE_MODULE_PATH}<br>  )</p>
+<h1 id="Require_out_of_source_build-">Require out of source build.</h1><p>include(MacroEnsureOutOfSourceBuild)<br>MACRO_ENSURE_OUT_OF_SOURCE_BUILD(<br> “${PROJECT_NAME} requires an out of source build. Please create a separate<br> build directory and run ‘cmake /path/to/${PROJECT_NAME} [options]’ there.”<br> )</p>
+<p>if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)<br>  set(LIBCXX_LIBDIR_SUFFIX “” CACHE STRING<br>      “Define suffix of library directory name (32/64)”)</p>
+<p>  set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib${LIBCXX_LIBDIR_SUFFIX})<br>  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib${LIBCXX_LIBDIR_SUFFIX})</p>
+<p>  set(LIBCXX_BUILT_STANDALONE 1)<br>else()<br>  set(LIBCXX_LIBDIR_SUFFIX ${LLVM_LIBDIR_SUFFIX})<br>endif()</p>
+<p>#===============================================================================</p>
+<h1 id="Setup_CMake_Options">Setup CMake Options</h1><p>#===============================================================================</p>
+<h1 id="Define_options-">Define options.</h1><p>option(LIBCXX_ENABLE_EXCEPTIONS “Use exceptions.” ON)<br>option(LIBCXX_ENABLE_RTTI “Use run time type information.” ON)<br>option(LIBCXX_ENABLE_ASSERTIONS “Enable assertions independent of build mode.” ON)<br>option(LIBCXX_ENABLE_PEDANTIC “Compile with pedantic enabled.” ON)<br>option(LIBCXX_ENABLE_WERROR “Fail and stop if a warning is triggered.” OFF)<br>option(LIBCXX_ENABLE_CXX1Y “Enable -std=c++1y and use of c++1y language features if the compiler supports it.” OFF)<br>option(LIBCXX_ENABLE_SHARED “Build libc++ as a shared library.” ON)<br>option(LIBCXX_ENABLE_GLOBAL_FILESYSTEM_NAMESPACE “Build libc++ with support for the global filesystem namespace.” ON)<br>option(LIBCXX_ENABLE_STDIN “Build libc++ with support for stdin/std::cin.” ON)<br>option(LIBCXX_ENABLE_STDOUT “Build libc++ with support for stdout/std::cout.” ON)<br>option(LIBCXX_ENABLE_THREADS “Build libc++ with support for threads.” ON)<br>option(LIBCXX_BUILD_32_BITS “Build 32 bit libc++” OFF)<br>option(LIBCXX_ENABLE_MONOTONIC_CLOCK<br>  “Build libc++ with support for a monotonic clock.<br>   This option may only be used when LIBCXX_ENABLE_THREADS=OFF.” ON)<br>option(LIBCXX_INSTALL_HEADERS “Install the libc++ headers.” ON)<br>option(LIBCXX_INSTALL_SUPPORT_HEADERS “Install libc++ support headers.” ON)<br>option(LIBCXX_GENERATE_COVERAGE “Enable generating code coverage.” OFF)<br>set(LIBCXX_COVERAGE_LIBRARY “” CACHE STRING<br>       “The Profile-rt library used to build with code coverage”)<br>option(LIBCXX_ENABLE_STATIC_ABI_LIBRARY “Statically link the ABI library” OFF)<br>set(LIBCXX_SYSROOT “” CACHE STRING “Use alternate sysroot.”)<br>set(LIBCXX_GCC_TOOLCHAIN “” CACHE STRING “Use alternate GCC toolchain.”)<br>if (LIBCXX_BUILT_STANDALONE)<br>  set(LLVM_USE_SANITIZER “” CACHE STRING<br>      “Define the sanitizer used to build the library and tests”)<br>endif()</p>
+<p>if (LIBCXX_ENABLE_STATIC_ABI_LIBRARY)<br>  if (APPLE)<br>    message(FATAL_ERROR “LIBCXX_ENABLE_STATIC_ABI_LIBRARY is not supported on OS X”)<br>  else()<br>    message(WARNING “LIBCXX_ENABLE_STATIC_ABI_LIBRARY is an experimental option”)<br>  endif()<br>endif()</p>
+<p>set(CXXABIS none libcxxabi libcxxrt libstdc++ libsupc++)<br>if (NOT LIBCXX_CXX_ABI)<br>  if (NOT DEFINED LIBCXX_BUILT_STANDALONE AND<br>      IS_DIRECTORY “${CMAKE_SOURCE_DIR}/projects/libcxxabi”)<br>    set(LIBCXX_CXX_ABI_LIBNAME “libcxxabi”)<br>    set(LIBCXX_CXX_ABI_INCLUDE_PATHS “${CMAKE_SOURCE_DIR}/projects/libcxxabi/include”)<br>    set(LIBCXX_CXX_ABI_INTREE 1)<br>  else ()<br>    set(LIBCXX_CXX_ABI_LIBNAME “none”)<br>  endif ()<br>else ()<br>  set(LIBCXX_CXX_ABI_LIBNAME “${LIBCXX_CXX_ABI}”)<br>endif ()<br>set(LIBCXX_CXX_ABI “${LIBCXX_CXX_ABI}” CACHE STRING<br>    “Specify C++ ABI library to use.” FORCE)<br>set_property(CACHE LIBCXX_CXX_ABI PROPERTY STRINGS ;${CXXABIS})</p>
+<h1 id="Build_libc++abi_with_libunwind-_We_need_this_option_to_determine_whether_to">Build libc++abi with libunwind. We need this option to determine whether to</h1><h1 id="link_with_libunwind_or_libgcc_s_while_running_the_test_cases-">link with libunwind or libgcc_s while running the test cases.</h1><p>option(LIBCXXABI_USE_LLVM_UNWINDER “Build and use the LLVM unwinder.” OFF)</p>
+<p>#===============================================================================</p>
+<h1 id="Configure_System">Configure System</h1><p>#===============================================================================</p>
+<p>set(LIBCXX_COMPILER    ${CMAKE_CXX_COMPILER})<br>set(LIBCXX_SOURCE_DIR  ${CMAKE_CURRENT_SOURCE_DIR})<br>set(LIBCXX_BINARY_DIR  ${CMAKE_CURRENT_BINARY_DIR})<br>set(LIBCXX_LIBRARY_DIR ${CMAKE_BINARY_DIR}/lib${LIBCXX_LIBDIR_SUFFIX})</p>
+<h1 id="Declare_libc++_configuration_variables-">Declare libc++ configuration variables.</h1><h1 id="They_are_intended_for_use_as_follows:">They are intended for use as follows:</h1><h1 id="LIBCXX_CXX_FLAGS:_General_flags_for_both_the_compiler_and_linker-">LIBCXX_CXX_FLAGS: General flags for both the compiler and linker.</h1><h1 id="LIBCXX_COMPILE_FLAGS:_Compile_only_flags-">LIBCXX_COMPILE_FLAGS: Compile only flags.</h1><h1 id="LIBCXX_LINK_FLAGS:_Linker_only_flags-">LIBCXX_LINK_FLAGS: Linker only flags.</h1><p>set(LIBCXX_CXX_FLAGS “”)<br>set(LIBCXX_COMPILE_FLAGS “”)<br>set(LIBCXX_LINK_FLAGS “”)</p>
+<h1 id="Configure_compiler-">Configure compiler.</h1><p>include(config-ix)</p>
+<h1 id="Configure_ABI_library">Configure ABI library</h1><p>include(HandleLibCXXABI)</p>
+<h1 id="Configure_coverage_options-">Configure coverage options.</h1><p>if (LIBCXX_GENERATE_COVERAGE)<br>  include(CodeCoverage)<br>  set(CMAKE_BUILD_TYPE “COVERAGE” CACHE STRING “” FORCE)<br>endif()</p>
+<p>#===============================================================================</p>
+<h1 id="Setup_Compiler_Flags">Setup Compiler Flags</h1><p>#===============================================================================</p>
+<h1 id="Get_required_flags-">Get required flags.</h1><h1 id="On_all_systems_the_system_c++_standard_library_headers_need_to_be_excluded-">On all systems the system c++ standard library headers need to be excluded.</h1><p>if (MSVC)</p>
+<h1 id="MSVC_only_has_-X,_which_disables_all_default_includes;_including_the_crt-">MSVC only has -X, which disables all default includes; including the crt.</h1><h1 id="Thus,_we_do_nothing_and_hope_we_don’t_accidentally_include_any_of_the_C++">Thus, we do nothing and hope we don’t accidentally include any of the C++</h1><h1 id="headers-">headers.</h1><p>else()<br>  if (LIBCXX_HAS_NOSTDINCXX_FLAG)<br>    list(APPEND LIBCXX_COMPILE_FLAGS -nostdinc++)<br>    string(REPLACE “-stdlib=libc++” “” CMAKE_CXX_FLAGS “${CMAKE_CXX_FLAGS}”)<br>    string(REPLACE “-stdlib=libstdc++” “” CMAKE_CXX_FLAGS “${CMAKE_CXX_FLAGS}”)<br>  endif()</p>
+<h1 id="If_c++1y_has_been_enabled_then_attempt_to_use_it-_Fail_if_it_is_no_supported">If c++1y has been enabled then attempt to use it. Fail if it is no supported</h1><h1 id="by_the_compiler-_Otherwise_choose_c++11_and_ensure_the_compiler_supports_it-">by the compiler. Otherwise choose c++11 and ensure the compiler supports it.</h1><p>  if (LIBCXX_ENABLE_CXX1Y)<br>    if (LIBCXX_HAS_STDCXX1Y_FLAG)<br>      set(LIBCXX_STD_VERSION c++1y)<br>    else()<br>      message(FATAL_ERROR “c++1y was enabled but the compiler does not support it.”)<br>    endif()<br>  else()<br>    if (LIBCXX_HAS_STDCXX11_FLAG)<br>      set(LIBCXX_STD_VERSION c++11)<br>    else()<br>      message(FATAL_ERROR “c++11 is required by libc++ but is not supported by the compiler”)<br>    endif()<br>  endif()</p>
+<h1 id="LIBCXX_STD_VERSION_should_always_be_set_at_this_point-">LIBCXX_STD_VERSION should always be set at this point.</h1><p>  list(APPEND LIBCXX_CXX_FLAGS “-std=${LIBCXX_STD_VERSION}”)<br>endif()</p>
+<p>macro(append_if list condition var)<br>  if (${condition})<br>    list(APPEND ${list} ${var})<br>  endif()<br>endmacro()</p>
+<h1 id="Get_warning_flags">Get warning flags</h1><p>if (NOT MSVC)<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WALL_FLAG -Wall)<br>  list(APPEND LIBCXX_COMPILE_FLAGS -Werror=return-type)<br>endif()</p>
+<p>append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_W_FLAG -W)<br>append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WNO_UNUSED_PARAMETER_FLAG -Wno-unused-parameter)<br>append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WWRITE_STRINGS_FLAG -Wwrite-strings)<br>append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WNO_LONG_LONG_FLAG -Wno-long-long)<br>if (LIBCXX_ENABLE_WERROR)<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WERROR_FLAG -Werror)<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WX_FLAG -WX)<br>else()<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_WNO_ERROR_FLAG -Wno-error)<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_NO_WX_FLAG -WX-)<br>endif()<br>if (LIBCXX_ENABLE_PEDANTIC)<br>  append_if(LIBCXX_COMPILE_FLAGS LIBCXX_HAS_PEDANTIC_FLAG -pedantic)<br>endif()</p>
+<h1 id="Get_feature_flags-">Get feature flags.</h1><h1 id="Exceptions">Exceptions</h1><p>if (LIBCXX_ENABLE_EXCEPTIONS)</p>
+<h1 id="Catches_C++_exceptions_only_and_tells_the_compiler_to_assume_that_extern_C">Catches C++ exceptions only and tells the compiler to assume that extern C</h1><h1 id="functions_never_throw_a_C++_exception-">functions never throw a C++ exception.</h1><p>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_EHSC_FLAG -EHsc)<br>else()<br>  list(APPEND LIBCXX_CXX_FLAGS -D_LIBCPP_NO_EXCEPTIONS)<br>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_NO_EHS_FLAG -EHs-)<br>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_NO_EHA_FLAG -EHa-)<br>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_FNO_EXCEPTIONS_FLAG -fno-exceptions)<br>endif()</p>
+<h1 id="RTTI">RTTI</h1><p>if (NOT LIBCXX_ENABLE_RTTI)<br>  list(APPEND LIBCXX_CXX_FLAGS -D_LIBCPP_NO_RTTI)<br>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_NO_GR_FLAG -GR-)<br>  append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_FNO_RTTI_FLAG -fno-rtti)<br>endif()</p>
+<h1 id="Assert">Assert</h1><p>string(TOUPPER “${CMAKE_BUILD_TYPE}” uppercase_CMAKE_BUILD_TYPE)<br>if (LIBCXX_ENABLE_ASSERTIONS)</p>
+<h1 id="MSVC_doesn’t_like__DEBUG_on_release_builds-_See_PR_4379-">MSVC doesn’t like _DEBUG on release builds. See PR 4379.</h1><p>  if (NOT MSVC)<br>    list(APPEND LIBCXX_COMPILE_FLAGS -D_DEBUG)<br>  endif()</p>
+<h1 id="On_Release_builds_cmake_automatically_defines_NDEBUG,_so_we">On Release builds cmake automatically defines NDEBUG, so we</h1><h1 id="explicitly_undefine_it:">explicitly undefine it:</h1><p>  if (uppercase_CMAKE_BUILD_TYPE STREQUAL “RELEASE”)<br>    list(APPEND LIBCXX_COMPILE_FLAGS -UNDEBUG)<br>  endif()<br>else()<br>  if (NOT uppercase_CMAKE_BUILD_TYPE STREQUAL “RELEASE”)<br>    list(APPEND LIBCXX_COMPILE_FLAGS -DNDEBUG)<br>  endif()<br>endif()</p>
+<h1 id="Static_library">Static library</h1><p>if (NOT LIBCXX_ENABLE_SHARED)<br>  list(APPEND LIBCXX_COMPILE_FLAGS -D_LIBCPP_BUILD_STATIC)<br>endif()</p>
+<p>if (CMAKE_SIZEOF_VOID_P EQUAL 8 AND NOT WIN32)<br>  if (LIBCXX_BUILD_32_BITS)<br>    message(STATUS “Building 32 bits executables and libraries.”)<br>    list(APPEND LIBCXX_CXX_FLAGS “-m32”)<br>  endif()<br>elseif(LIBCXX_BUILD_32_BITS)<br>  message(FATAL_ERROR “LIBCXX_BUILD_32_BITS=ON is not supported on this platform.”)<br>endif()</p>
+<h1 id="This_is_the_ONLY_place_where_add_definitions_is_called-">This is the <em>ONLY</em> place where add_definitions is called.</h1><p>if (MSVC)<br>  add_definitions(-D_CRT_SECURE_NO_WARNINGS)<br>endif()</p>
+<h1 id="LIBCXX_ENABLE_GLOBAL_FILESYSTEM_NAMESPACE_configuration">LIBCXX_ENABLE_GLOBAL_FILESYSTEM_NAMESPACE configuration</h1><p>if (NOT LIBCXX_ENABLE_GLOBAL_FILESYSTEM_NAMESPACE)<br>  add_definitions(-D_LIBCPP_HAS_NO_GLOBAL_FILESYSTEM_NAMESPACE)<br>endif()</p>
+<h1 id="LIBCXX_ENABLE_STDIN_configuration">LIBCXX_ENABLE_STDIN configuration</h1><p>if (NOT LIBCXX_ENABLE_STDIN)<br>  add_definitions(-D_LIBCPP_HAS_NO_STDIN)<br>endif()</p>
+<h1 id="LIBCXX_ENABLE_STDOUT_configuration">LIBCXX_ENABLE_STDOUT configuration</h1><p>if (NOT LIBCXX_ENABLE_STDOUT)<br>  add_definitions(-D_LIBCPP_HAS_NO_STDOUT)<br>endif()</p>
+<h1 id="LIBCXX_ENABLE_THREADS_configuration">LIBCXX_ENABLE_THREADS configuration</h1><p>if (NOT LIBCXX_ENABLE_THREADS)<br>  add_definitions(-D_LIBCPP_HAS_NO_THREADS)<br>  if (NOT LIBCXX_ENABLE_MONOTONIC_CLOCK)<br>    add_definitions(-D_LIBCPP_HAS_NO_MONOTONIC_CLOCK)<br>  endif()</p>
+<h1 id="Ensure_LIBCXX_ENABLE_MONOTONIC_CLOCK_is_set_to_ON-">Ensure LIBCXX_ENABLE_MONOTONIC_CLOCK is set to ON.</h1><p>elseif(NOT LIBCXX_ENABLE_MONOTONIC_CLOCK)<br>  message(FATAL_ERROR “LIBCXX_ENABLE_MONOTONIC_CLOCK can only be set to OFF”<br>                      “ when LIBCXX_ENABLE_THREADS is also set to OFF.”)<br>endif()</p>
+<h1 id="Configure_for_sanitizers-_If_LIBCXX_BUILT_STANDALONE_then_we_have_to_do">Configure for sanitizers. If LIBCXX_BUILT_STANDALONE then we have to do</h1><h1 id="the_flag_translation_ourselves-_Othewise_LLVM’s_CMakeList-txt_will_handle_it-">the flag translation ourselves. Othewise LLVM’s CMakeList.txt will handle it.</h1><p>if (LIBCXX_BUILT_STANDALONE)</p>
+<h1 id="NOTE:_LLVM_USE_SANITIZER_checks_for_a_UNIX_like_system_instead_of_MSVC-">NOTE: LLVM_USE_SANITIZER checks for a UNIX like system instead of MSVC.</h1><h1 id="But_we_don’t_have_LLVM_ON_UNIX_so_checking_for_MSVC_is_the_best_we_can_do-">But we don’t have LLVM_ON_UNIX so checking for MSVC is the best we can do.</h1><p>  if (LLVM_USE_SANITIZER AND NOT MSVC)<br>    append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_FNO_OMIT_FRAME_POINTER_FLAG<br>              “-fno-omit-frame-pointer”)<br>    if (NOT uppercase_CMAKE_BUILD_TYPE STREQUAL “DEBUG” AND<br>        NOT uppercase_CMAKE_BUILD_TYPE STREQUAL “RELWITHDEBINFO”)<br>      append_if(LIBCXX_CXX_FLAGS LIBCXX_HAS_GLINE_TABLES_ONLY_FLAG<br>                “-gline-tables-only”)<br>    endif()<br>    if (LLVM_USE_SANITIZER STREQUAL “Address”)<br>      list(APPEND LIBCXX_CXX_FLAGS “-fsanitize=address”)<br>    elseif (LLVM_USE_SANITIZER MATCHES “Memory(WithOrigins)?”)<br>      list(APPEND LIBCXX_CXX_FLAGS “-fsanitize=memory”)<br>      if (LLVM_USE_SANITIZER STREQUAL “MemoryWithOrigins”)<br>        list(APPEND LIBCXX_CXX_FLAGS “-fsanitize-memory-track-origins”)<br>      endif()<br>    elseif (LLVM_USE_SANITIZER STREQUAL “Undefined”)<br>      list(APPEND LIBCXX_CXX_FLAGS<br>          “-fsanitize=undefined -fno-sanitize=vptr,function -fno-sanitize-recover”)<br>    elseif (LLVM_USE_SANITIZER STREQUAL “Thread”)<br>      list(APPEND LIBCXX_CXX_FLAGS “-fsanitize=thread”)<br>    else()<br>      message(WARNING “Unsupported value of LLVM_USE_SANITIZER: ${LLVM_USE_SANITIZER}”)<br>    endif()<br>  elseif(MSVC)<br>    message(WARNING “LLVM_USE_SANITIZER is not supported with MSVC”)<br>  endif()<br>endif()</p>
+<p>append_if(LIBCXX_CXX_FLAGS LIBCXX_TARGET_TRIPLE<br>          “-target ${LIBCXX_TARGET_TRIPLE}”)</p>
+<p>append_if(LIBCXX_CXX_FLAGS LIBCXX_SYSROOT “–sysroot ${LIBCXX_SYSROOT}”)<br>append_if(LIBCXX_CXX_FLAGS LIBCXX_GCC_TOOLCHAIN<br>          “-gcc-toolchain ${LIBCXX_GCC_TOOLCHAIN}”)</p>
+<p>if (LLVM_USE_SANITIZER AND LIBCXX_GENERATE_COVERAGE)<br>  message(FATAL_ERROR “LLVM_USE_SANITIZER cannot be used with LIBCXX_GENERATE_COVERAGE”)<br>endif()</p>
+<p>string(REPLACE “;” “ “ LIBCXX_CXX_FLAGS “${LIBCXX_CXX_FLAGS}”)<br>set(CMAKE_CXX_FLAGS “${CMAKE_CXX_FLAGS} ${LIBCXX_CXX_FLAGS}”)</p>
+<p>#===============================================================================</p>
+<h1 id="Setup_Source_Code">Setup Source Code</h1><p>#===============================================================================</p>
+<p>include_directories(include)<br>add_subdirectory(include)</p>
+<h1 id="Add_source_code-_This_also_contains_all_of_the_logic_for_deciding_linker_flags">Add source code. This also contains all of the logic for deciding linker flags</h1><h1 id="soname,_etc…">soname, etc…</h1><p>add_subdirectory(lib)</p>
+<p>#===============================================================================</p>
+<h1 id="Setup_Tests">Setup Tests</h1><p>#===============================================================================</p>
+<p>add_subdirectory(test)</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CMakeLists/">CMakeLists</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/libcxx/">libcxx</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 ccsheller
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
